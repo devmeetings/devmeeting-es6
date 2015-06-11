@@ -2,39 +2,177 @@
 <html>
 
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="chrome=1">
-  <title>Zadanie 1 - ES6 Framework</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-  <link href="https://devmeetings.github.io/devmeeting-angular/css/bootstrap-theme-cyborg/cyborg.min.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Zadanie 1 - ES6 Framework - Tinder</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link href="https://devmeetings.github.io/devmeeting-angular/css/bootstrap-theme-cyborg/cyborg.min.css"
+          rel="stylesheet">
 </head>
 
 <body>
-  <div class="container">
+<div class="container">
     <div class="row">
-      <div class="col-xs-12">
-        <header>
-          <h1 class="text-center">Zadanie 1</h1>
-        </header>
-        <hr>
-        <section>
-          <h4>
-            1a. Stworzenie własnego route'a <code>/custom</code><span class="text-success">// obowiązkowe</span>
-          </h4>
-          <h5 class="text-muted">
-          </h5>
-        </section>
-       <section>
-          <h4>
-            1b. Spróbowanie wysłania innego kodu niż <code>200</code>. Dodanie <code>Content-Type</code> itd. <span class="text-danger">// extra</span>
-          </h4>
-          <h5 class="text-muted">
-          </h5>
-        </section>
-      </div>
+        <div class="col-xs-12">
+            <header>
+                <h1 class="text-center">Zadanie 1</h1>
+            </header>
+            <hr>
+            <section>
+                <h4>
+                    1a. Korzystając z JS wyświetl pojedyncze zdjęcie
+                </h4>
+                <h5 class="text-muted">
+                    Adres zdjęcia pobierz z <strong>lorempixel</strong>.
+                    Możesz użyć <code>https://xplatform.org/ext/lorempixel/{width}/{height}/{category}</code>
+                </h5>
+            </section>
+            <section>
+                <h4>
+                    1b. Stwórz klasę, która będzie wyświetlać zdjęcia <span class="label label-danger">extra</span>
+                </h4>
+                <h5 class="text-muted">
+                </h5>
+            </section>
+        </div>
     </div>
-  </div>
-  <script src="https://devmeetings.github.io/devmeeting-angular/tasks.js"></script>
+    <div class="row">
+        <div class="col-xs-12">
+            <header>
+                <h1 class="text-center">Zadanie 2</h1>
+            </header>
+            <hr>
+            <section>
+                <h4>
+                    2a. Dodaj button, który wyświetli nowe zdjęcie
+                </h4>
+                <h5 class="text-muted"></h5>
+            </section>
+            <section>
+                <h4>
+                    2b. Zamknij logikę tworzenia zdjęć w klasę <span class="label label-danger">extra</span>
+                </h4>
+                <h5 class="text-muted"></h5>
+            </section>
+            <section>
+                <h4>
+                    2c. Użyj generatora do tworzenia nowych zdjęć <span class="label label-danger">extra</span>
+                </h4>
+                <h5 class="text-muted"></h5>
+            </section>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <header>
+                <h1 class="text-center">Zadanie 3</h1>
+            </header>
+            <hr>
+            <section>
+                <h4>
+                    3a. Dodaj nazwę do każdego zdjęcia
+                </h4>
+                <h5 class="text-muted">
+                    Nazwa powinna być przechowywana razem z adresem w pojedynczym objekcie.
+                </h5>
+            </section>
+            <section>
+                <h4>
+                    3b. Użyj generatora do tworzenia nazw <span class="label label-danger">extra</span>
+                </h4>
+                <h5 class="text-muted"></h5>
+            </section>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <header>
+                <h1 class="text-center">Zadanie 4</h1>
+            </header>
+            <hr>
+            <section>
+                <h4>
+                    4a. Dodaj button, którym możemy 'polajkować' zdjęcie
+                </h4>
+                <h5 class="text-muted">
+                    Niech zmieni się model zdjęcia (np. pole <code>like</code>) i jego wygląd
+                </h5>
+            </section>
+            <section>
+                <h4>
+                    4b. 'Polajkowanie' zdjęcia powinno dodać je do osobnej kolekcji
+                </h4>
+                <h5 class="text-muted"></h5>
+            </section>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <header>
+                <h1 class="text-center">Zadanie 5</h1>
+            </header>
+            <hr>
+            <section>
+                <h4>
+                    5a. Wyświetl listę zdjęć, które użytkownik polajkował.
+                </h4>
+                <h5 class="text-muted"></h5>
+            </section>
+            <section>
+                <h4>
+                    5b. Użyj klasy <code>Set</code> lub dopisz własny iterator do przechowywania zdjęć <span class="label label-danger">extra</span>
+                </h4>
+                <h5 class="text-muted"></h5>
+            </section>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <header>
+                <h1 class="text-center">Zadanie 6</h1>
+            </header>
+            <hr>
+            <section>
+                <h4>
+                    6a. Synchronizuj kolekcję zdjęć z <code>localStorage</code> i <code>sessionStorage</code>.
+                </h4>
+                <h5 class="text-muted"></h5>
+            </section>
+            <section>
+                <h4>
+                    6b. Stwórz klasy Storage, SessionStorage i LocalStorage
+                </h4>
+                <h5 class="text-muted">
+                    Storage powinna zawierać wspólną logikę, a SessionStorage i LocalStorage powinny po niej dziedziczyć
+                </h5>
+            </section>
+            <section>
+                <h4>
+                    6c. Przyjmij, że dostęp do Storage jest asynchroniczny i użyj Promise <span class="label label-danger">extra</span>
+                </h4>
+                <h5 class="text-muted"></h5>
+            </section>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <header>
+                <h1 class="text-center">Zadanie 7</h1>
+            </header>
+            <hr>
+            <section>
+                <h4>
+                    7a. Skorzystaj z RESTowego API do pobrania zdjęć <span class="label label-danger">extra</span>
+                </h4>
+                <h5 class="text-muted">
+                    Adres API: <code>https://randomuser.me/</code><br/>
+                    Użyj <code>fetch</code> oraz Promise/generatorów.
+                </h5>
+            </section>
+        </div>
+    </div>
+</div>
+<script src="https://devmeetings.github.io/devmeeting-angular/tasks.js"></script>
 </body>
 
 </html>
