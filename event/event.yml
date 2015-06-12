@@ -56,7 +56,7 @@ iterations:
     tasks:
       - title: Tasks 4.
         url: 'https://devmeetings.github.io/devmeeting-es6/tasks/pl_04.html'
-        noOfTasks: 3
+        noOfTasks: 4
     materials:
       - title: Inheritance
         material: 557a0cbc45bda83c1324e24b
@@ -73,7 +73,7 @@ iterations:
     tasks:
       - title: Tasks 5.
         url: 'https://devmeetings.github.io/devmeeting-es6/tasks/pl_05.html'
-        noOfTasks: 3
+        noOfTasks: 4
     materials:
       - title: Local Storage
         material: 557b219e0b5ce4e84def3be2
