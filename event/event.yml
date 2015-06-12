@@ -1,0 +1,92 @@
+title: ECMAScript 6
+name: es6
+image: 'http://www.systemgroup.net/sites/default/files/uploads/EMCA6.jpg'
+baseSlide: 55795e83d91ce0413065802c
+visible: true
+removed: false
+pin: 666
+iterations:
+  - title: Iteration 1
+    tasks:
+      - title: Tasks 1.
+        url: 'https://devmeetings.github.io/devmeeting-es6/tasks/pl_01.html'
+        noOfTasks: 2
+    materials:
+      - title: 'let, const, lambdas'
+        material: 557a059dd35739e310c8b504
+        annotationsMergeWithAuto: true
+        annotations:
+          annotations: []
+
+  - title: Iteration 2
+    tasks:
+      - title: Tasks 2.
+        url: 'https://devmeetings.github.io/devmeeting-es6/tasks/pl_02.html'
+        noOfTasks: 3
+    materials:
+      - title: Classes
+        material: 557a08c0d35739e310c8b859
+        annotationsMergeWithAuto: true
+        annotations:
+          annotations: []
+      - title: 'Default parameters, Template strings'
+        material: 557a09cf45bda83c1324df43
+        annotationsMergeWithAuto: true
+        annotations:
+          annotations: []
+
+  - title: Iteration 3
+    tasks:
+      - title: Tasks 3.
+        url: 'https://devmeetings.github.io/devmeeting-es6/tasks/pl_03.html'
+        noOfTasks: 3
+    materials:
+      - title: 'Modules, For of'
+        material: 557a0bff45bda83c1324e0f3
+        annotationsMergeWithAuto: true
+        annotations:
+          annotations: []
+      - title: 'Sets, Symbols, Iterators'
+        material: 557a0c6845bda83c1324e1d9
+        annotationsMergeWithAuto: true
+        annotations:
+          annotations: []
+
+  - title: Iteration 4
+    tasks:
+      - title: Tasks 4.
+        url: 'https://devmeetings.github.io/devmeeting-es6/tasks/pl_04.html'
+        noOfTasks: 3
+    materials:
+      - title: Inheritance
+        material: 557a0cbc45bda83c1324e24b
+        annotationsMergeWithAuto: true
+        annotations:
+          annotations: []
+      - title: Generators
+        material: 557a0d5645bda83c1324e324
+        annotationsMergeWithAuto: true
+        annotations:
+          annotations: []
+
+  - title: Iteration 5
+    tasks:
+      - title: Tasks 5.
+        url: 'https://devmeetings.github.io/devmeeting-es6/tasks/pl_05.html'
+        noOfTasks: 3
+    materials:
+      - title: Local Storage
+        material: 557b219e0b5ce4e84def3be2
+        annotationsMergeWithAuto: true
+        annotations:
+          annotations: []
+      - title: 'Local Storage & Session Storage'
+        material: 557b21ec0b5ce4e84def3c91
+        annotationsMergeWithAuto: true
+        annotations:
+          annotations: []
+      - title: Trying Promises
+        material: 557b22b80b5ce4e84def3e38
+        annotationsMergeWithAuto: true
+        annotations:
+          annotations: []

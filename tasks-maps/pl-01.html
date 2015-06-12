@@ -1,0 +1,185 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Maps :: ES6</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link href="https://devmeetings.github.io/devmeeting-angular/css/bootstrap-theme-cyborg/cyborg.min.css"
+          rel="stylesheet">
+</head>
+
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+            <header>
+                <h1 class="text-center">Zadanie 1</h1>
+            </header>
+            <hr>
+            <section>
+                <h4>
+                    1a. Wyświetl mapę korzystając z Google Maps
+                </h4>
+                <h5 class="text-muted"></h5>
+            </section>
+            <section>
+                <h4>
+                    1b. Stwórz klasę, która będzie obsługiwać wyświetlanie mapy<span class="label label-danger">extra</span>
+                </h4>
+                <h5 class="text-muted"></h5>
+            </section>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <header>
+                <h1 class="text-center">Zadanie 2</h1>
+            </header>
+            <hr>
+            <section>
+                <h4>
+                    2a. Kliknięcie na mapę powinno dodać <em>marker</em>
+                </h4>
+                <h5 class="text-muted"></h5>
+            </section>
+            <section>
+                <h4>
+                    2b. Zamknij logikę tworzenia zdjęć w klasie mapy <span class="label label-danger">extra</span>
+                </h4>
+                <h5 class="text-muted"></h5>
+            </section>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <header>
+                <h1 class="text-center">Zadanie 3</h1>
+            </header>
+            <hr>
+            <section>
+                <h4>
+                    3a. Kliknięcie w marker wyświetla jego nazwę
+                </h4>
+                <h5 class="text-muted">
+                    Nazwa powinna być generowana w momencie tworzenia markera.
+                </h5>
+            </section>
+            <section>
+                <h4>
+                    3b. Użyj generatora do tworzenia nazw <span class="label label-danger">extra</span>
+                </h4>
+                <h5 class="text-muted"></h5>
+            </section>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <header>
+                <h1 class="text-center">Zadanie 4</h1>
+            </header>
+            <hr>
+            <section>
+                <h4>
+                    4a. Wyświetl listę miejsc (markerów) obok mapy
+                </h4>
+                <h5 class="text-muted">
+                    Użyj tablicy lub instancji Set, żeby przechowywać modele
+                </h5>
+            </section>
+            <section>
+                <h4>
+                    4b. Zmień kolekcję miejsc na własną klasę z iteratorem
+                </h4>
+                <h5 class="text-muted"></h5>
+            </section>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <header>
+                <h1 class="text-center">Zadanie 5</h1>
+            </header>
+            <hr>
+            <section>
+                <h4>
+                    5a. Dodaj możliwość edycji markerów na mapie
+                </h4>
+                <h5 class="text-muted">
+                    Edycja może dotyczyć położenia (drag) lub nazwy. Możesz dodać pole opisu. Zmiana powinna być widoczna również na liscie.
+                </h5>
+            </section>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <header>
+                <h1 class="text-center">Zadanie 6</h1>
+            </header>
+            <hr>
+            <section>
+                <h4>
+                    6a. Zmień komunikację między mapą a listą na eventy.
+                </h4>
+                <h5 class="text-muted">
+                    Potrzebujesz obieku, który będzie przechowywał listę handlerów i odpalał akcje
+                </h5>
+            </section>
+            <section>
+                <h4>
+                    6b. Dodaj możliwość usunięcia markera z poziomu listy
+                </h4>
+                <h5 class="text-muted"></h5>
+            </section>
+            <section>
+                <h4>
+                    6c. Stwórz klasę EventEmitter, po której dziedziczyć będą widoki i modele <span class="label label-danger">extra</span>
+                </h4>
+                <h5 class="text-muted"></h5>
+            </section>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <header>
+                <h1 class="text-center">Zadanie 7</h1>
+            </header>
+            <hr>
+            <section>
+                <h4>
+                    7a. Synchronizuj listę markerów z localStorage
+                </h4>
+                <h5 class="text-muted"></h5>
+            </section>
+            <section>
+                <h4>
+                    7b. Przyjmij, że localStorage jest asynchroniczny<span class="label label-danger">extra</span>
+                </h4>
+                <h5 class="text-muted">
+                    Skorzystaj z Promise lub generatorów
+                </h5>
+            </section>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <header>
+                <h1 class="text-center">Zadanie 8</h1>
+            </header>
+            <hr>
+            <section>
+                <h4>
+                    8a. Synchronizuj listę markerów z zewnętrznym API<span class="label label-danger">extra</span>
+                </h4>
+                <h5 class="text-muted">
+                    Użyj <code>fetch</code> oraz Promise/generatorów.
+                </h5>
+            </section>
+        </div>
+    </div>
+</div>
+<script src="https://devmeetings.github.io/devmeeting-angular/tasks.js"></script>
+</body>
+
+</html>
