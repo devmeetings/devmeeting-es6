@@ -8,78 +8,413 @@ pin: 666
 iterations:
   - title: Iteration 1
     tasks:
-      - title: Tasks 1.
+      - title: Tinder 1.
         url: 'https://devmeetings.github.io/devmeeting-es6/tasks/pl_01.html'
+        noOfTasks: 2
+      - title: Maps 1.
+        url: 'https://devmeetings.github.io/devmeeting-es6/tasks-maps/pl-01.html'
         noOfTasks: 2
     materials:
       - title: 'let, const, lambdas'
         material: 557a059dd35739e310c8b504
         annotationsMergeWithAuto: true
         annotations:
-          annotations: []
-
+          annotations:
+            - type: comment
+              description: ES6 nie jest jeszcze obsługiwane w  przeglądarce.
+              timestamp: 1.1300694542877392
+            - type: comment
+              description: Na XPlatform transpilacją zajmuje się `babel`.
+              timestamp: 11.300694542877391
+            - type: comment
+              description: ES6 nie jest obsługiwane jeszcze w przeglądarkach.
+              timestamp: 2.8251736357193478
+            - type: comment
+              description: ES6 nie jest jeszcze dostępne w przeglądarkach
+              timestamp: 5.085312544294826
+            - type: comment
+              description: Do ładowania modułów będziemy używać `require.js`
+              timestamp: 32.71618824039233
+            - type: comment
+              description: '`require.js` nie jest konieczny jeśli korzystamy z ES6, ale nie ma jeszcze standardu do ładowania modułów ES6'
+              timestamp: 40.11746562721474
+            - type: comment
+              description: Napiszemy apkę do zapisywania ulubionych cytatów. Zacznijmy od formularza dodawania.
+              timestamp: 71.19437562012757
+            - type: comment
+              timestamp: 164.07449966475903
+              description: Do znajdowania elementów w drzewie DOM użyjemy atrybutu `hook`
+            - type: comment
+              timestamp: 173.75695803027747
+              description: Dodajmy `hook` do `h1`
+            - type: comment
+              timestamp: 221.49361304039687
+              description: Za pomocą `let` deklarujemy zmienną o zasięgu blokowym
+            - type: comment
+              timestamp: 255.18856815240105
+              description: 'Korzystamy ze skróconej formy tworzenia funkcji anonimowej:`()=>`'
+            - type: comment
+              timestamp: 310.57223000317055
+              description: 'Poprawiamy nazwy `hooków`, aby nie było konfliktu'
+            - type: comment
+              timestamp: 325.4600028348689
+              description: Stwórzmy funkcję pomocniczą do wyciągania elementów z DOM
+            - type: comment
+              timestamp: 412.989426459162
+              description: Za pomocą `` ` `` możemy wstawiać wartości zmiennych wewnątrz stringa.
+            - type: comment
+              timestamp: 437.77651987489105
+              description: 'Dodajemy nowe cytaty do kolekcji, ale nigdzie jej nie wyświetlamy.'
+            - type: comment
+              timestamp: 450.55736491737633
+              description: Możemy deklarować stałe używając  `const`.
+            - type: comment
+              timestamp: 509.4267117797328
+              description: Wyświetlmy zawartość kolekcji w jakimś `div`
+            - type: comment
+              timestamp: 539.0431296952517
+              description: Skorzystamy z `list-group` z Bootstrapa.
+            - type: comment
+              timestamp: 674.2102484778792
+              description: Musimy zbudować HTMLa dla pojedynczego cytatu.
+            - type: comment
+              timestamp: 796.1339305457124
+              description: Przetestuj działanie apki po pierwszej iteracji.
   - title: Iteration 2
     tasks:
-      - title: Tasks 2.
+      - title: Tinder 2.
         url: 'https://devmeetings.github.io/devmeeting-es6/tasks/pl_02.html'
         noOfTasks: 3
+      - title: Maps 2.
+        url: 'https://devmeetings.github.io/devmeeting-es6/tasks-maps/pl-02.html'
+        noOfTasks: 2
     materials:
       - title: Classes
         material: 557a08c0d35739e310c8b859
         annotationsMergeWithAuto: true
         annotations:
-          annotations: []
+          annotations:
+            - type: comment
+              timestamp: 5.635169383416017
+              description: Po kliknięciu na `Add Cite` powinno czyścić się pole na cytat.
+            - type: comment
+              timestamp: 92.77729467308282
+              description: Dodatkowo poprawmy `focus` po wstawieniu nowego cytatu.
+            - type: comment
+              timestamp: 219.0365517594433
+              description: W klasie konstruktor jes po prostu funkcją o nazwie `constructor`
+            - type: comment
+              timestamp: 255.44259521379266
+              description: Przenieśmy całą logikę do funkcji `render`
+            - type: comment
+              timestamp: 279.41048192771086
+              description: 'Klasa jest zdefiniowana, ale musimy jeszcze stworzyć jej instancje'
+            - type: comment
+              timestamp: 302.4207569099929
+              description: Poprawmy wywołania `$` w funkcji `render` na wykorzystanie pól naszej klasy.
+            - type: comment
+              timestamp: 411.63888727304897
+              description: Funkcje pomocnicze umieścimy jako metody klasy.
+            - type: comment
+              timestamp: 471.4758384124734
+              description: Spróbujmy zmienić `forEach` na trochę bardziej funkcyjne podejście.
+            - type: comment
+              timestamp: 526.0849035939993
+              description: 'Jeżeli użyjemy `() =>` bez klamerek automatycznie zwracana jest wartość wyrażenia, które wywołujemy.'
+            - type: comment
+              timestamp: 570.0913026222537
+              description: Wydzielmy wstawianie nowego cytatu do osobnej funkcji.
+            - type: comment
+              timestamp: 664
+              description: Dodaliśmy strukturę w kodzie przez wprowadzenie klas. Wyglada lepiej?
+            - type: comment
+              timestamp: 664
+              description: Dodaliśmy strukturę w kodzie przez wprowadzenie klas. Wyglada lepiej?
       - title: 'Default parameters, Template strings'
         material: 557a09cf45bda83c1324df43
         annotationsMergeWithAuto: true
         annotations:
-          annotations: []
-
+          annotations:
+            - type: comment
+              timestamp: 16.584436569808645
+              description: Do każdego cytatu dodamy jeszcze autora.
+            - type: comment
+              timestamp: 119.82255421686746
+              description: W kolekcji nie możemy trzymać już tylko pojedynczych stringów. Zróbmy klasę na nasz model.
+            - type: pause
+              title: Pause
+              description: Musimy jeszcze poprawić wyświetlanie.
+            - type: pause
+              title: Pause
+              description: Musimy jeszcze poprawić wyświetlanie.
+            - type: comment
+              timestamp: 279.8623671155209
+              description: Przetestuj dodawanie cytatu i zobacz co się stanie gdy zostawisz pole `Autor` puste.
+            - type: comment
+              timestamp: 332.5349406239451
+              description: 'Stworzmy osobną klasę, która obsługiwać będzie wyświetlanie pojedynczego cytatu.'
+            - type: comment
+              timestamp: 480.1194386959603
+              description: Stwórzmy instancję klasy i wywołajmy `render`
+            - type: comment
+              timestamp: 500.6462504308609
+              description: Z funkcji `render` zwróćmy `this`.
+            - type: comment
+              timestamp: 521.1730621657601
+              description: '`blockquote` nie wyświetla się poprawnie. Trzeba naprawić literówkę :)'
+            - type: comment
+              timestamp: 530
+              description: Przy starcie aplikacji dodajmy jeden cytat do kolekcji.
+            - type: comment
+              timestamp: 566.0952275024754
+              description: Przekażmy nasz model jako parametr do widoku.
+            - type: comment
+              timestamp: 585.0728458988901
+              description: Wzorując się na frameworku `Backbone` nazwaliśmy go `collection`.
   - title: Iteration 3
     tasks:
-      - title: Tasks 3.
+      - title: Tinder 3.
         url: 'https://devmeetings.github.io/devmeeting-es6/tasks/pl_03.html'
         noOfTasks: 3
+      - title: Maps 3.
+        url: 'https://devmeetings.github.io/devmeeting-es6/tasks-maps/pl-03.html'
+        noOfTasks: 2
     materials:
       - title: 'Modules, For of'
         material: 557a0bff45bda83c1324e0f3
         annotationsMergeWithAuto: true
         annotations:
-          annotations: []
+          annotations:
+            - type: comment
+              timestamp: 4.002253720765415
+              description: Nasz plik zaczyna się robić duży. Warto byłoby podzielić go na mniejsze moduły.
+            - type: comment
+              timestamp: 19.494187105595067
+              description: Klasy związane z widokiem przenieśliśmy do osobnego pliku
+            - type: comment
+              timestamp: 58.61131890229018
+              description: 'Za pomocą `export` oznaczamy elementy, które są publiczne w naszym module.'
+            - type: comment
+              timestamp: 61.32240724463539
+              description: Oczywiście możemy wyeksportować więcej niż jedną rzecz.
+            - type: comment
+              timestamp: 64.42079392160134
+              description: W głównym pliku musimy zaimportować moduł.
+            - type: comment
+              timestamp: 96.95385402974331
+              description: Używamy `Destructuring Assignment` aby rozbić obiekt modułu od razu do zmiennych.
+            - type: comment
+              timestamp: 128.64386959603118
+              description: Przenosimy też funkcję pomocniczą `$`
+            - type: comment
+              timestamp: 178.2180564274856
+              description: Poprawmy jeszcze błędy - korzystaliśmy ze zmiennej `citations` zamiast z `this.collection`
+            - type: comment
+              timestamp: 191.77349813921143
+              description: 'Nasz widok korzysta bezpośrednio z modelu. Musimy wydzielić model do osobnego modułu, żeby go zaimportować.'
+            - type: comment
+              timestamp: 229.72873493204372
+              description: Z modułu `models` eksportujemy naszą klasę.
+            - type: comment
+              timestamp: 241.7349833052866
+              description: 'Klasa `Citation` jest jedynym eksportem modułu, więc możemy użyć `export default`'
+            - type: comment
+              timestamp: 250.25554666694282
+              description: 'Zauważ, że nie korzystamy w tym przypadku z `Destructuring Assignment`'
+            - type: comment
+              timestamp: 253.35393334390872
+              description: Taki sam `import` potrzebujemy w module widoku.
+            - type: comment
+              timestamp: 274.65534174805066
+              description: 'Aplikacja wciąż nie działa. W metodzie `render` odwołujemy się do zmiennej, która nie istnieje!'
+            - type: comment
+              timestamp: 315.8921686746988
+              description: Skorzystamy z pętli `for of` która pozwoli nam iterować po kolekcji
+            - type: comment
+              timestamp: 357.7203888137415
+              description: Oczywiście w tym wypadku nie możemy korzystać z `const`. Iterator pętli musi być zmienną.
+            - type: comment
+              timestamp: 403.4215922989919
+              description: Stworzymy dodatkowy model na kolekcję cytatów.
       - title: 'Sets, Symbols, Iterators'
         material: 557a0c6845bda83c1324e1d9
         annotationsMergeWithAuto: true
         annotations:
-          annotations: []
-
+          annotations:
+            - type: comment
+              timestamp: 403.4215922989919
+              description: Model kolekcji będzie miał metodę do dodawania nowego cytatu.
+            - type: comment
+              timestamp: 403.4215922989919
+              description: 'Metoda przyjmuje obiekt, który od razu rozbijamy na dwie zmienne.'
+            - type: comment
+              timestamp: 403.4215922989919
+              description: Skorzystajmy z tej metody w naszym widoku.
+            - type: comment
+              timestamp: 403.4215922989919
+              description: Eksportujemy tylko kolekcję.
+            - type: comment
+              timestamp: 403.4215922989919
+              description: Teraz skorzystaliśmy z odwrotnej notacji. Na podstawie zmiennych tworzymy obiekt.
+            - type: comment
+              timestamp: 403.4215922989919
+              description: We are trying to use `spread` operator to add all elements from set to list.
+            - type: comment
+              timestamp: 403.4215922989919
+              description: Nasz własny iterator musi zwracać obiekt z propsami `value` i `done`. W zmiennej `state` trzymamy stan iteratora.
+            - type: comment
+              timestamp: 12.323757543866247
+              description: 'Stworzymy nowy model, który będzie trzymał kolekcję cytatów'
+            - type: comment
+              timestamp: 94.4821411696406
+              description: 'Model będzie wystawiał metodę, która pozwoli dodać nowy cytat.'
+            - type: comment
+              timestamp: 121.32054648739312
+              description: 'Metoda będzie przyjmowała obiekt, ale rozbijemy go od razu na dwie zmienne.'
+            - type: comment
+              timestamp: 171.98488305661982
+              description: Tworzymy instancje modelu i poprawiamy dodanei początkowego cytatu.
+            - type: comment
+              timestamp: 176.49520668492173
+              description: Musimy zmienić domyślnie eksportowaną klasę.
+            - type: comment
+              timestamp: 188.35067964946447
+              description: Poprawmy jeszcze wywołanie w widoku
+            - type: comment
+              timestamp: 391.5557484838764
+              description: 'Iterator musi zwracać obiekt z metodą `next`, która zwróci `value` oraz `done`.'
+            - type: comment
+              timestamp: 474.2618546671546
+              description: Próbujemy użyć operatora `spread` aby wstawić wszystkie elementy zbioru do listy.
+            - type: comment
+              timestamp: 582
+              description: Iterator skończony. W zmiennej `state` trzymamy aktualny indeks czyli jego stan.
   - title: Iteration 4
     tasks:
-      - title: Tasks 4.
+      - title: Tinder 4.
         url: 'https://devmeetings.github.io/devmeeting-es6/tasks/pl_04.html'
         noOfTasks: 4
+      - title: Maps 4.
+        url: 'https://devmeetings.github.io/devmeeting-es6/tasks-maps/pl-04.html'
+        noOfTasks: 2
     materials:
       - title: Inheritance
         material: 557a0cbc45bda83c1324e24b
         annotationsMergeWithAuto: true
         annotations:
-          annotations: []
+          annotations:
+            - type: comment
+              timestamp: 582.8215838362579
+              description: 'Umieśćmy pomocniczą funkcję `$` w osobnej klasie, po której będziemy dziedziczyć'
+            - type: comment
+              timestamp: 582.8215838362579
+              description: Dodatkowo ograniczymy wyszukiwanie `hooków` tylko do pewnego nodea.
+            - type: comment
+              timestamp: 582.8215838362579
+              description: Rozszerzamy klasę `View` i wywołujemy jej konstruktor korzystając z `super`
+            - type: comment
+              timestamp: 582.8215838362579
+              description: Poprawmy wywołania.
+            - type: comment
+              timestamp: 582.8215838362579
+              description: I przekażmy całe `body` jako `$parent`
+            - type: comment
+              timestamp: 582.8215838362579
+              description: Stwórzmy generator cytatów.
+            - type: comment
+              timestamp: 582.8215838362579
+              description: 'Korzystając z `function*` i `yield` możemy tworzyć generatory czyli dynamiczne iteratory.'
+            - type: comment
+              timestamp: 582.8215838362579
+              description: '`browser-polyfill` zawiera implementację generatów w ES5. Jest wymagany przez `babel`.'
+            - type: comment
+              timestamp: 582.8215838362579
+              description: Tworzymy nową instancję generatora i skorzystamy z niej przy wstawianiu pierwszego cytatu.
+            - type: comment
+              timestamp: 582.8215838362579
+              description: 'Generatory są też iteratorami, więc korzystamy z nich przez użycie metody `next()`'
+            - type: comment
+              timestamp: 582.8215838362579
+              description: Nasz generator ma tylko jedno `yield` więc zwraca tylko jedną wartość.
+            - type: comment
+              timestamp: 582.8215838362579
+              description: Przenieśmy generator do osobnego pliku
+            - type: comment
+              timestamp: 582.8215838362579
+              description: Przekopiujmy tutaj zawartość generatora z głównego pliku.
+            - type: comment
+              timestamp: 582.8215838362579
+              description: "Pokażemy teraz jak stworzyć\_nieskończony generator losowych cytatów."
+            - type: comment
+              timestamp: 582.8215838362579
+              description: Mamy tablicę wartości i funkcję do wyciągania losowego elementu.
+            - type: comment
+              timestamp: 582.8215838362579
+              description: 'Zwracamy pojedynczą losową wartość, a teraz całość zamykamy w nieskończoną pętlę.'
       - title: Generators
         material: 557a0d5645bda83c1324e324
         annotationsMergeWithAuto: true
         annotations:
           annotations: []
-
   - title: Iteration 5
     tasks:
-      - title: Tasks 5.
+      - title: Tinder 5.
         url: 'https://devmeetings.github.io/devmeeting-es6/tasks/pl_05.html'
         noOfTasks: 4
+      - title: Maps 5.
+        url: 'https://devmeetings.github.io/devmeeting-es6/tasks-maps/pl-05.html'
+        noOfTasks: 1
     materials:
       - title: Local Storage
         material: 557b219e0b5ce4e84def3be2
         annotationsMergeWithAuto: true
         annotations:
-          annotations: []
+          annotations:
+            - type: comment
+              timestamp: 582.8215838362579
+              description: Na początku dodajmy metodę `fillText` która wypełni nam `input`.
+            - type: comment
+              timestamp: 582.8215838362579
+              description: 'Stworzymy klasę `Storage`, która będzie abstrakcją na trzymanie danych.'
+            - type: comment
+              timestamp: 582.8215838362579
+              description: Wyciągamy dane z `localStorage` i obsługujemy ewentualne błędy.
+            - type: comment
+              timestamp: 582.8215838362579
+              description: 'Gettery i Settery są już dostępne w ES5, ale ich użycie jest bardziej przyjazne w połączeniu z klasami.'
+            - type: comment
+              timestamp: 582.8215838362579
+              description: Poprawmy użycie `Storage` na wykorzystanie getterów i setterów.
+            - type: comment
+              timestamp: 582.8215838362579
+              description: Sprawdźmy działanie gotowej aplikacji.
+            - type: comment
+              timestamp: 582.8215838362579
+              description: Dodamy teraz możliwość używania wymiennie `SessionStorage` i `LocalStorage`
+            - type: comment
+              timestamp: 582.8215838362579
+              description: Wprowadzimy klasę bazową i dwie klasy bardziej specyficzne
+            - type: comment
+              timestamp: 582.8215838362579
+              description: Jeśli korzystamy z `export default` to nie możemy eksportować innych obiektów. Poprawmy to.
+            - type: comment
+              timestamp: 582.8215838362579
+              description: "Spróbujemy teraz zmienić\_API naszego storage na asnychroniczne. Skorzystamy z `Promise`"
+            - type: comment
+              timestamp: 582.8215838362579
+              description: '`setImmediate` symuluje opóźnienie w dostępie do danych.'
+            - type: comment
+              timestamp: 582.8215838362579
+              description: Zmieniamy wywołanie.
+            - type: comment
+              timestamp: 582.8215838362579
+              description: 'Próbujemy teraz zrobić iterator, który zwraca dane asynchroniczne.'
+            - type: comment
+              timestamp: 582.8215838362579
+              description: Niestety `yield` można używać tylko bezpośrednio w generatorze. Masz jakiś pomysł jak zwrócić te dane?
+            - type: comment
+              timestamp: 582.8215838362579
+              description: 'Nam nie udało się tego obejść. Iteratory muszą być synchroniczne. Generatory mogą natomiast służyć do konsumowania asynchronicznych danych (ale nie produkowania!)'
       - title: 'Local Storage & Session Storage'
         material: 557b21ec0b5ce4e84def3c91
         annotationsMergeWithAuto: true
@@ -90,3 +425,4 @@ iterations:
         annotationsMergeWithAuto: true
         annotations:
           annotations: []
+liveLink: 'https://xplatform.org/live/es6'
