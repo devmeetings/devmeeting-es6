@@ -33,7 +33,8 @@
                     4.2 'Polajkowanie' zdjęcia powinno dodać je do osobnej kolekcji
                 </h4>
                 <h5 class="text-muted">
-                    Możesz użyć klasy <code>Set</code> lub dopisać własny iterator
+                    Możesz użyć klasy <code>Set</code> lub stworzyć własną klasę. <br/>
+                    Jeżeli tworzysz własną kolekcję postaraj się użyć <code>Symbol.iterator</code>, żeby umożliwić łatwe iterowanie po modelach.
                 </h5>
             </section>
             <section>
@@ -41,17 +42,19 @@
                     4.3 Wyświetl listę zdjęć, które użytkownik polajkował.
                 </h4>
                 <h5 class="text-muted">
-                  Możesz wykorzystać dziedziczenie, aby wyciągnąć wspólną logikę.
+                  Widok zdjęcia głównego i pojedynczego zdjęcia pewnie będą współdzielić część logiki.
+                  Możesz wykorzystać dziedziczenie, żeby nie powtarzać kodu.
                     <img src="./zadanie5.png" class="img-responsive" />
 
                 </h5>
             </section>
             <section>
                 <h4>
-                  4.4 Wykorzystaj generator aby stworzyć losową nazwę dla zdjęcia.
+                  4.4 Dodaj możliwość 'odlajkowania' zdjęcia.
                   <span class="label label-danger">extra</span>
                 </h4>
                 <h5 class="text-muted">
+                    Kliknięcie w zdjęcie lub ikonkę obok zdjęcia na liście polubionych powinno he usunąć.
                 </h5>
             </section>
             <section>
