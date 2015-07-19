@@ -1,0 +1,410 @@
+title: ECMAScript 6
+name: es6
+image: 'http://www.systemgroup.net/sites/default/files/uploads/EMCA6.jpg'
+baseSlide: 55795e83d91ce0413065802c
+visible: true
+removed: false
+pin: 666
+iterations:
+  - title: Iteration 1
+    tasks:
+      - title: Tinder 1.
+        url: 'https://devmeetings.github.io/devmeeting-es6/tasks/pl_01.html'
+        noOfTasks: 2
+      - title: Maps 1.
+        url: 'https://devmeetings.github.io/devmeeting-es6/tasks-maps/en-01.html'
+        noOfTasks: 2
+    materials:
+      - title: 'let, const, lambdas'
+        material: 557a059dd35739e310c8b504
+        annotationsMergeWithAuto: true
+        annotations:
+          annotations:
+            - type: comment
+              description: ES6 is not yet supported by the browsers.
+              timestamp: 1.1300694542877392
+            - type: comment
+              description: Xplatform uses 'babel'.
+              timestamp: 2.8251736357193478
+            - type: comment
+              description: 'babel' transpiles EcmaScript 6 to EcmaScript 5.
+              timestamp: 5.085312544294826
+            - type: comment
+              description: You can read more about babel here https://babeljs.io/
+              timestamp: 11.300694542877391
+            - type: comment
+              description: To load modules we will use `require.js`
+              timestamp: 32.71618824039233
+            - type: comment
+              description: '`require.js` is not required for ES6, but as of now ES6 modules are not supported by the browser'
+              timestamp: 40.11746562721474
+            - type: comment
+              description: We will create an app to store favorite quotes. We will start with the quote form.
+              timestamp: 71.19437562012757
+            - type: comment
+              timestamp: 164.07449966475903
+              description: We will use `hook` attribute to find DOM elements in the tree.
+            - type: comment
+              timestamp: 173.75695803027747
+              description: Lets add `hook` attribute to `h1`
+            - type: comment
+              timestamp: 221.49361304039687
+              description: Using`let` we are declaring a variable which has a scope range
+            - type: comment
+              timestamp: 255.18856815240105
+              description: 'We are using shorter form for creating anonymous function `()=>`'
+            - type: comment
+              timestamp: 310.57223000317055
+              description: 'We are fixing `hooks` attributes to avoid conflicts'
+            - type: comment
+              timestamp: 325.4600028348689
+              description: Lets create a helper function to find elements in DOM
+            - type: comment
+              timestamp: 412.989426459162
+              description: By using `` ` `` we can create a string and inject variables into the string.
+            - type: comment
+              timestamp: 437.77651987489105
+              description: 'We are adding citation to collections but we do not display them anywhere.'
+            - type: comment
+              timestamp: 450.55736491737633
+              description: By using `const` keyword we can declare constant variable.
+            - type: comment
+              timestamp: 509.4267117797328
+              description: We will use `div` to display our collection of cites.
+            - type: comment
+              timestamp: 539.0431296952517
+              description: We are using `list-group` from Bootstrap for nice visualization.
+            - type: comment
+              timestamp: 674.2102484778792
+              description: We need to create HTML for a a single cite.
+            - type: comment
+              timestamp: 796.1339305457124
+              description: That is the end of first iteration, try to play with an app and check if it works.
+  - title: Iteration 2
+    tasks:
+      - title: Tinder 2.
+        url: 'https://devmeetings.github.io/devmeeting-es6/tasks/en_02.html'
+        noOfTasks: 3
+      - title: Maps 2.
+        url: 'https://devmeetings.github.io/devmeeting-es6/tasks-maps/en-02.html'
+        noOfTasks: 2
+    materials:
+      - title: Classes
+        material: 557a08c0d35739e310c8b859
+        annotationsMergeWithAuto: true
+        annotations:
+          annotations:
+            - type: comment
+              timestamp: 5.635169383416017
+              description: After clicking `Add Cite` the app should clear the input field.
+            - type: comment
+              timestamp: 92.77729467308282
+              description: In addition we have fixed `focus` after creating new cite, and we will create a class CitationView.
+            - type: comment
+              timestamp: 219.0365517594433
+              description: We use `constructor` keyword to declare the constructor.
+            - type: comment
+              timestamp: 255.44259521379266
+              description: We have moved all DOM rendering logic to `render` function
+            - type: comment
+              timestamp: 279.41048192771086
+              description: 'Now we need to create instances of our class'
+            - type: comment
+              timestamp: 302.4207569099929
+              description: We change `$` calls inside the `render` function to use predefined fields instead.
+            - type: comment
+              timestamp: 411.63888727304897
+              description: We change helper functions to be part of our class.
+            - type: comment
+              timestamp: 471.4758384124734
+              description: We will change `forEach` to be more functional.
+            - type: comment
+              timestamp: 526.0849035939993
+              description: 'Anonymous function `() =>` without closures will automatically return the value returned by the expression we use'
+            - type: comment
+              timestamp: 570.0913026222537
+              description: We move, inserting new citation to a separate function.
+            - type: comment
+              timestamp: 664
+              description: It is the end of second iteration.
+      - title: 'Default parameters, Template strings'
+        material: 557a09cf45bda83c1324df43
+        annotationsMergeWithAuto: true
+        annotations:
+          annotations:
+            - type: comment
+              timestamp: 16.584436569808645
+              description: We will add author for every cite.
+            - type: comment
+              timestamp: 119.82255421686746
+              description: In collection we cannot store just strings anymore. Lets add a data model class (Citation).
+            - type: pause
+              title: Pause
+              description: We need to fix the rendering.
+            - type: pause
+              title: Pause
+              description: We need to fix the rendering.
+            - type: comment
+              timestamp: 279.8623671155209
+              description: Test adding new cite and notice what happens when the `Autor` field is left blank.
+            - type: comment
+              timestamp: 332.5349406239451
+              description: 'We are creating separate class which will be responsible for rendering a single cite'
+            - type: comment
+              timestamp: 480.1194386959603
+              description: Lets create an instance of the class and call `render` function
+            - type: comment
+              timestamp: 500.6462504308609
+              description: The `render` will return `this`.
+            - type: comment
+              timestamp: 521.1730621657601
+              description: '`blockquote` does not display correctly. We need to fix the typo :)'
+            - type: comment
+              timestamp: 530
+              description: During application start we add new cite.
+            - type: comment
+              timestamp: 566.0952275024754
+              description: We use the model as a parameter for the view.
+            - type: comment
+              timestamp: 585.0728458988901
+              description: Inspired by `Backbone` :) we named it `collection`.
+  - title: Iteration 3
+    tasks:
+      - title: Tinder 3.
+        url: 'https://devmeetings.github.io/devmeeting-es6/tasks/pl_03.html'
+        noOfTasks: 3
+      - title: Maps 3.
+        url: 'https://devmeetings.github.io/devmeeting-es6/tasks-maps/en-03.html'
+        noOfTasks: 2
+    materials:
+      - title: 'Modules, For of'
+        material: 557a0bff45bda83c1324e0f3
+        annotationsMergeWithAuto: true
+        annotations:
+          annotations:
+            - type: comment
+              timestamp: 4.002253720765415
+              description: Our file is getting bigger we should split it to modules.
+            - type: comment
+              timestamp: 19.494187105595067
+              description: View related are moved to a different file.
+            - type: comment
+              timestamp: 58.61131890229018
+              description: 'By using `export` we mark elements which are public in our module.'
+            - type: comment
+              timestamp: 61.32240724463539
+              description: Of course we can export more than just one class.
+            - type: comment
+              timestamp: 64.42079392160134
+              description: In the main file we need to import our module.
+            - type: comment
+              timestamp: 96.95385402974331
+              description: We use `Destructuring Assignment` to use module object directly as variables.
+            - type: comment
+              timestamp: 128.64386959603118
+              description: We move our helper function `$`
+            - type: comment
+              timestamp: 178.2180564274856
+              description: We are fixing some errors - we used  `citations` variable instead of `this.collection`
+            - type: comment
+              timestamp: 191.77349813921143
+              description: 'Our view uses model directly. We need to move model to seprate module so we will be able to import it.'
+            - type: comment
+              timestamp: 229.72873493204372
+              description: From the module `models` we are exporting our model class.
+            - type: comment
+              timestamp: 241.7349833052866
+              description: 'Class `Citation` is the only export in our module, therefore we used `export default`'
+            - type: comment
+              timestamp: 250.25554666694282
+              description: 'Notice that in this case we did not use `Destructuring Assignment`'
+            - type: comment
+              timestamp: 253.35393334390872
+              description: Same `import` is needed in the view module.
+            - type: comment
+              timestamp: 274.65534174805066
+              description: 'The app is not working. In the `render` function we use variable which does not exist!'
+            - type: comment
+              timestamp: 315.8921686746988
+              description: We are using `for of` which enables iterating over the collection.
+            - type: comment
+              timestamp: 357.7203888137415
+              description: In this case we cannot use `const` anymore. The iterator needs to be a variable.
+            - type: comment
+              timestamp: 403.4215922989919
+              description: This is the end of this iteration.
+      - title: 'Sets, Symbols, Iterators'
+        material: 557a0c6845bda83c1324e1d9
+        annotationsMergeWithAuto: true
+        annotations:
+          annotations:
+            - type: comment
+              timestamp: 12.323757543866247
+              description: 'We will create a model which will handle a collection of cites'
+            - type: comment
+              timestamp: 94.4821411696406
+              description: 'Model will implement a function which will add a new cite'
+            - type: comment
+              timestamp: 121.32054648739312
+              description: 'An object will be the argument for the function, but we will split it into two variables inside function body.'
+            - type: comment
+              timestamp: 171.98488305661982
+              description: We create an instance of our model and we fix adding the initial cite.
+            - type: comment
+              timestamp: 176.49520668492173
+              description: We need to change default exported class.
+            - type: comment
+              timestamp: 188.35067964946447
+              description: Lets fix a function call in our view class.
+            - type: comment
+              timestamp: 275
+              description: 'We create Iterator for our collection'
+            - type: comment
+              timestamp: 391.5557484838764
+              description: 'Iterator needs to return and object with `next` function'
+            - type: comment
+              timestamp: 403.4215922989919
+              description: The `next` function in our iterator needs to return object with `value` and `done` properties.
+            - type: comment
+              timestamp: 474.2618546671546
+              description: We tried to use`spread` operator to insert all collection items to items variable.
+            - type: comment
+              timestamp: 582
+              description: Iterator is complete. `state` variable holds the current collection index.
+  - title: Iteration 4
+    tasks:
+      - title: Tinder 4.
+        url: 'https://devmeetings.github.io/devmeeting-es6/tasks/pl_04.html'
+        noOfTasks: 4
+      - title: Maps 4.
+        url: 'https://devmeetings.github.io/devmeeting-es6/tasks-maps/en-04.html'
+        noOfTasks: 2
+    materials:
+      - title: Inheritance
+        material: 557a0cbc45bda83c1324e24b
+        annotationsMergeWithAuto: true
+        annotations:
+          annotations:
+            - type: comment
+              timestamp: 582.8215838362579
+              description: 'Lets move the helper function `$` to separate class which we will inherit'
+            - type: comment
+              timestamp: 582.8215838362579
+              description: Lets limit using `hooks` to a specified node.
+            - type: comment
+              timestamp: 582.8215838362579
+              description: We are extending `View` class and we are calling its constructor by using `super`
+            - type: comment
+              timestamp: 582.8215838362579
+              description: We are fixing function calls.
+            - type: comment
+              timestamp: 582.8215838362579
+              description: Lets pass the `body` as a `$parent`
+            - type: comment
+              timestamp: 582.8215838362579
+              description: Lets create a cite generator.
+            - type: comment
+              timestamp: 582.8215838362579
+              description: 'By using `function*` and `yield` we can create generators (which are the dynamic iterators).'
+            - type: comment
+              timestamp: 582.8215838362579
+              description: '`browser-polyfill` has generator implementations for ES5. It is required by babel `babel`.'
+            - type: comment
+              timestamp: 582.8215838362579
+              description: We are creating new generator instance and we will use it to generate initial cite.
+            - type: comment
+              timestamp: 582.8215838362579
+              description: 'Generators are in fact Iterators in which case we need to use `next()` function'
+            - type: comment
+              timestamp: 582.8215838362579
+              description: Our generator has single `yield` which means that it can return only a single value.
+            - type: comment
+              timestamp: 582.8215838362579
+              description: Lets move generators to separate file.
+            - type: comment
+              timestamp: 582.8215838362579
+              description: Lets copy generator implementation to separate file.
+            - type: comment
+              timestamp: 582.8215838362579
+              description: "Now we will create an infinite generator of random cites."
+            - type: comment
+              timestamp: 582.8215838362579
+              description: We have got an array of values and a function to pick a random value.
+            - type: comment
+              timestamp: 582.8215838362579
+              description: 'We return single random value, and we enclose everything within infinite loop'
+      - title: Generators
+        material: 557a0d5645bda83c1324e324
+        annotationsMergeWithAuto: true
+        annotations:
+          annotations: []
+  - title: Iteration 5
+    tasks:
+      - title: Tinder 5.
+        url: 'https://devmeetings.github.io/devmeeting-es6/tasks/pl_05.html'
+        noOfTasks: 4
+      - title: Maps 5.
+        url: 'https://devmeetings.github.io/devmeeting-es6/tasks-maps/en-05.html'
+        noOfTasks: 1
+    materials:
+      - title: Local Storage
+        material: 557b219e0b5ce4e84def3be2
+        annotationsMergeWithAuto: true
+        annotations:
+          annotations:
+            - type: comment
+              timestamp: 582.8215838362579
+              description: We add `fillText` function which will populate the `input`.
+            - type: comment
+              timestamp: 582.8215838362579
+              description: 'We are creating `Storage` class, which will store all values.'
+            - type: comment
+              timestamp: 582.8215838362579
+              description: We load data from `localStorage` and handle potential errors.
+            - type: comment
+              timestamp: 582.8215838362579
+              description: 'Getters and setters are available in ES5, but using them with ES6 classes is more optimal.'
+            - type: comment
+              timestamp: 582.8215838362579
+              description: We are changing `Storage` class to use getters and setters.
+            - type: comment
+              timestamp: 582.8215838362579
+              description: Lets check if the application is working correctly.
+            - type: comment
+              timestamp: 582.8215838362579
+              description: We will make `SessionStorage` and `LocalStorage` to be exchangable
+            - type: comment
+              timestamp: 582.8215838362579
+              description: We are creating a base class and more specifics classes to handle each type of storage
+            - type: comment
+              timestamp: 582.8215838362579
+              description: `export default` prevents exporting more than default object. We need to change it.
+            - type: comment
+              timestamp: 582.8215838362579
+              description: "We will change our storage API to works as it was asynchronous. We will use `Promise`"
+            - type: comment
+              timestamp: 582.8215838362579
+              description: '`setImmediate` simulate delay in javascript processing.'
+            - type: comment
+              timestamp: 582.8215838362579
+              description: We are changing the function call.
+            - type: comment
+              timestamp: 582.8215838362579
+              description: 'We will try to create an iterator which will return asynchronous data.'
+            - type: comment
+              timestamp: 582.8215838362579
+              description: Unfortunatelly `yield` can be used only directly in generator.
+            - type: comment
+              timestamp: 582.8215838362579
+              description: 'We could not make the workaround. Iterators must be synchronous. Generators can be used to read (but not create) asynchronous data'
+      - title: 'Local Storage & Session Storage'
+        material: 557b21ec0b5ce4e84def3c91
+        annotationsMergeWithAuto: true
+        annotations:
+          annotations: []
+      - title: Trying Promises
+        material: 557b22b80b5ce4e84def3e38
+        annotationsMergeWithAuto: true
+        annotations:
+          annotations: []
+liveLink: 'https://xplatform.org/live/es6'

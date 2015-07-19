@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Maps :: ES6</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link href="https://devmeetings.github.io/devmeeting-angular/css/bootstrap-theme-cyborg/cyborg.min.css"
+          rel="stylesheet">
+</head>
+
+<body>
+<div class="container"><div class="row">
+    <div class="col-xs-12">
+        <header>
+            <h1 class="text-center">Task 4</h1>
+        </header>
+        <hr>
+        <section>
+            <h4>
+                4a. Display the list of markers.
+            </h4>
+            <h5 class="text-muted">
+                Use array or Set class to store models.
+                <img src="./zadanie4.png" class="img-responsive" />
+            </h5>
+        </section>
+        <section>
+            <h4>
+                4b. Change Set/Array of places to own collection class.
+            </h4>
+            <h5 class="text-muted">
+                Use <code>Symbol.iterator</code> to be compatible with other collections and
+                to enable iterating over the markers.
+            </h5>
+        </section>
+        <section>
+            <h4>
+                4c. Add marker edit functionality to the map <span class="label label-danger">extra</span>
+            </h4>
+            <h5 class="text-muted">
+                Marker edit can affect coordinates (use drag) or name. Changing the marker should reflect markers
+                on the list.
+                <img src="./zadanie5.png" class="img-responsive" />
+            </h5>
+        </section>
+        <section>
+            <h4>
+                4d. Use events for communication between map and list. <span class="label label-danger">extra</span>
+            </h4>
+            <h5 class="text-muted">
+                You need an object which will hold a list of handler and which will dispatch an event.
+            </h5>
+        </section>
+        <section>
+            <h4>
+                4e. Add remove marker functionality to the list. Removing marker on the list
+                should remove marker on the map.<span class="label label-danger">extra</span>
+            </h4>
+            <h5 class="text-muted">
+                <img src="./zadanie6.png" class="img-responsive" />
+            </h5>
+        </section>
+    </div>
+</div></div>
+<script src="https://devmeetings.github.io/devmeeting-angular/tasks.js"></script>
+</body>
+
+</html>
