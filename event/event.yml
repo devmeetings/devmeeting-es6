@@ -304,58 +304,58 @@ iterations:
         annotations:
           annotations:
             - type: comment
-              timestamp: 582.8215838362579
+              timestamp: 47.2
               description: 'Umieśćmy pomocniczą funkcję `$` w osobnej klasie, po której będziemy dziedziczyć'
             - type: comment
-              timestamp: 582.8215838362579
+              timestamp: 80
               description: Dodatkowo ograniczymy wyszukiwanie `hooków` tylko do pewnego nodea.
             - type: comment
-              timestamp: 582.8215838362579
+              timestamp: 105.8
               description: Rozszerzamy klasę `View` i wywołujemy jej konstruktor korzystając z `super`
             - type: comment
-              timestamp: 582.8215838362579
+              timestamp: 134
               description: Poprawmy wywołania.
             - type: comment
-              timestamp: 582.8215838362579
+              timestamp: 150
               description: I przekażmy całe `body` jako `$parent`
-            - type: comment
-              timestamp: 582.8215838362579
-              description: Stwórzmy generator cytatów.
-            - type: comment
-              timestamp: 582.8215838362579
-              description: 'Korzystając z `function*` i `yield` możemy tworzyć generatory czyli dynamiczne iteratory.'
-            - type: comment
-              timestamp: 582.8215838362579
-              description: '`browser-polyfill` zawiera implementację generatów w ES5. Jest wymagany przez `babel`.'
-            - type: comment
-              timestamp: 582.8215838362579
-              description: Tworzymy nową instancję generatora i skorzystamy z niej przy wstawianiu pierwszego cytatu.
-            - type: comment
-              timestamp: 582.8215838362579
-              description: 'Generatory są też iteratorami, więc korzystamy z nich przez użycie metody `next()`'
-            - type: comment
-              timestamp: 582.8215838362579
-              description: Nasz generator ma tylko jedno `yield` więc zwraca tylko jedną wartość.
-            - type: comment
-              timestamp: 582.8215838362579
-              description: Przenieśmy generator do osobnego pliku
-            - type: comment
-              timestamp: 582.8215838362579
-              description: Przekopiujmy tutaj zawartość generatora z głównego pliku.
-            - type: comment
-              timestamp: 582.8215838362579
-              description: "Pokażemy teraz jak stworzyć\_nieskończony generator losowych cytatów."
-            - type: comment
-              timestamp: 582.8215838362579
-              description: Mamy tablicę wartości i funkcję do wyciągania losowego elementu.
-            - type: comment
-              timestamp: 582.8215838362579
-              description: 'Zwracamy pojedynczą losową wartość, a teraz całość zamykamy w nieskończoną pętlę.'
       - title: Generators
         material: 557a0d5645bda83c1324e324
         annotationsMergeWithAuto: true
         annotations:
-          annotations: []
+          annotations: 
+            - type: comment
+              timestamp: 1.5
+              description: Stwórzmy generator cytatów.
+            - type: comment
+              timestamp: 13.5
+              description: 'Korzystając z `function*` i `yield` możemy tworzyć generatory czyli dynamiczne iteratory.'
+            - type: comment
+              timestamp: 76.8
+              description: '`browser-polyfill` zawiera implementację generatów w ES5. Jest wymagany przez `babel`.'
+            - type: comment
+              timestamp: 111.5
+              description: Tworzymy nową instancję generatora i skorzystamy z niej przy wstawianiu pierwszego cytatu.
+            - type: comment
+              timestamp: 122.5
+              description: 'Generatory są też iteratorami, więc korzystamy z nich przez użycie metody `next()`'
+            - type: comment
+              timestamp: 144.4
+              description: Nasz generator ma tylko jedno `yield` więc zwraca tylko jedną wartość.
+            - type: comment
+              timestamp: 179
+              description: Przenieśmy generator do osobnego pliku
+            - type: comment
+              timestamp: 191.8
+              description: Przekopiujmy tutaj zawartość generatora z głównego pliku.
+            - type: comment
+              timestamp: 202.9
+              description: "Pokażemy teraz jak stworzyć nieskończony generator losowych cytatów."
+            - type: comment
+              timestamp: 331.5
+              description: Mamy tablicę wartości i funkcję do wyciągania losowego elementu.
+            - type: comment
+              timestamp: 401.6
+              description: 'Zwracamy pojedynczą losową wartość, a teraz całość zamykamy w nieskończoną pętlę.'
   - title: Iteration 5
     tasks:
       - title: Tinder 5.
@@ -371,58 +371,58 @@ iterations:
         annotations:
           annotations:
             - type: comment
-              timestamp: 582.8215838362579
+              timestamp: 58.2
               description: Na początku dodajmy metodę `fillText` która wypełni nam `input`.
             - type: comment
-              timestamp: 582.8215838362579
+              timestamp: 148.9
               description: 'Stworzymy klasę `Storage`, która będzie abstrakcją na trzymanie danych.'
             - type: comment
-              timestamp: 582.8215838362579
+              timestamp: 225.4
               description: Wyciągamy dane z `localStorage` i obsługujemy ewentualne błędy.
             - type: comment
-              timestamp: 582.8215838362579
-              description: 'Gettery i Settery są już dostępne w ES5, ale ich użycie jest bardziej przyjazne w połączeniu z klasami.'
+              timestamp: 245.9
+              description: 'Gettery i Settery są już dostępne w ES5, a ich użycie jest bardziej przyjazne w połączeniu z klasami.'
             - type: comment
-              timestamp: 582.8215838362579
+              timestamp: 293.9
               description: Poprawmy użycie `Storage` na wykorzystanie getterów i setterów.
             - type: comment
-              timestamp: 582.8215838362579
+              timestamp: 334.6
               description: Sprawdźmy działanie gotowej aplikacji.
-            - type: comment
-              timestamp: 582.8215838362579
-              description: Dodamy teraz możliwość używania wymiennie `SessionStorage` i `LocalStorage`
-            - type: comment
-              timestamp: 582.8215838362579
-              description: Wprowadzimy klasę bazową i dwie klasy bardziej specyficzne
-            - type: comment
-              timestamp: 582.8215838362579
-              description: Jeśli korzystamy z `export default` to nie możemy eksportować innych obiektów. Poprawmy to.
-            - type: comment
-              timestamp: 582.8215838362579
-              description: "Spróbujemy teraz zmienić\_API naszego storage na asnychroniczne. Skorzystamy z `Promise`"
-            - type: comment
-              timestamp: 582.8215838362579
-              description: '`setImmediate` symuluje opóźnienie w dostępie do danych.'
-            - type: comment
-              timestamp: 582.8215838362579
-              description: Zmieniamy wywołanie.
-            - type: comment
-              timestamp: 582.8215838362579
-              description: 'Próbujemy teraz zrobić iterator, który zwraca dane asynchroniczne.'
-            - type: comment
-              timestamp: 582.8215838362579
-              description: Niestety `yield` można używać tylko bezpośrednio w generatorze. Masz jakiś pomysł jak zwrócić te dane?
-            - type: comment
-              timestamp: 582.8215838362579
-              description: 'Nam nie udało się tego obejść. Iteratory muszą być synchroniczne. Generatory mogą natomiast służyć do konsumowania asynchronicznych danych (ale nie produkowania!)'
       - title: 'Local Storage & Session Storage'
         material: 557b21ec0b5ce4e84def3c91
         annotationsMergeWithAuto: true
         annotations:
-          annotations: []
+          annotations: 
+            - type: comment
+              timestamp: 13.2
+              description: Dodamy teraz możliwość używania wymiennie `SessionStorage` i `LocalStorage`
+            - type: comment
+              timestamp: 45.4
+              description: Wprowadzimy klasę bazową i dwie klasy bardziej specyficzne
+            - type: comment
+              timestamp: 57
+              description: Jeśli korzystamy z `export default` to nie możemy eksportować innych obiektów. Poprawmy to.
       - title: Trying Promises
         material: 557b22b80b5ce4e84def3e38
         annotationsMergeWithAuto: true
         annotations:
-          annotations: []
+          annotations: 
+            - type: comment
+              timestamp: 1.0
+              description: "Spróbujemy teraz zmienić\_API naszego storage na asnychroniczne. Skorzystamy z `Promise`"
+            - type: comment
+              timestamp: 23
+              description: '`setImmediate` symuluje opóźnienie w dostępie do danych.'
+            - type: comment
+              timestamp: 40.2
+              description: Zmieniamy wywołanie.
+            - type: comment
+              timestamp: 126.3
+              description: 'Próbujemy teraz zrobić iterator, który zwraca dane asynchroniczne.'
+            - type: comment
+              timestamp: 236.6
+              description: Niestety `yield` można używać tylko bezpośrednio w generatorze. Masz jakiś pomysł jak zwrócić te dane?
+            - type: comment
+              timestamp: 269
+              description: 'Nam nie udało się tego obejść. Iteratory muszą być synchroniczne. Generatory mogą natomiast służyć do konsumowania asynchronicznych danych (ale nie produkowania!)'
 liveLink: 'https://xplatform.org/live/es6'
