@@ -9,10 +9,10 @@ iterations:
   - title: Iteration 1
     tasks:
       - title: Tinder 1.
-        url: 'https://devmeetings.github.io/devmeeting-es6/tasks/pl_01.html'
+        url: 'https://devmeetings.github.io/devmeeting-es6/tasks/en_01.html'
         noOfTasks: 2
       - title: Maps 1.
-        url: 'https://devmeetings.github.io/devmeeting-es6/tasks-maps/en-01.html'
+        url: 'https://devmeetings.github.io/devmeeting-es6/tasks-maps/en_01.html'
         noOfTasks: 2
     materials:
       - title: 'let, const, lambdas'
@@ -86,7 +86,7 @@ iterations:
         url: 'https://devmeetings.github.io/devmeeting-es6/tasks/en_02.html'
         noOfTasks: 3
       - title: Maps 2.
-        url: 'https://devmeetings.github.io/devmeeting-es6/tasks-maps/en-02.html'
+        url: 'https://devmeetings.github.io/devmeeting-es6/tasks-maps/en_02.html'
         noOfTasks: 2
     materials:
       - title: Classes
@@ -171,10 +171,10 @@ iterations:
   - title: Iteration 3
     tasks:
       - title: Tinder 3.
-        url: 'https://devmeetings.github.io/devmeeting-es6/tasks/pl_03.html'
+        url: 'https://devmeetings.github.io/devmeeting-es6/tasks/en_03.html'
         noOfTasks: 3
       - title: Maps 3.
-        url: 'https://devmeetings.github.io/devmeeting-es6/tasks-maps/en-03.html'
+        url: 'https://devmeetings.github.io/devmeeting-es6/tasks-maps/en_03.html'
         noOfTasks: 2
     materials:
       - title: 'Modules, For of'
@@ -274,10 +274,10 @@ iterations:
   - title: Iteration 4
     tasks:
       - title: Tinder 4.
-        url: 'https://devmeetings.github.io/devmeeting-es6/tasks/pl_04.html'
+        url: 'https://devmeetings.github.io/devmeeting-es6/tasks/en_04.html'
         noOfTasks: 4
       - title: Maps 4.
-        url: 'https://devmeetings.github.io/devmeeting-es6/tasks-maps/en-04.html'
+        url: 'https://devmeetings.github.io/devmeeting-es6/tasks-maps/en_04.html'
         noOfTasks: 2
     materials:
       - title: Inheritance
@@ -286,65 +286,65 @@ iterations:
         annotations:
           annotations:
             - type: comment
-              timestamp: 582.8215838362579
-              description: 'Lets move the helper function `$` to separate class which we will inherit'
+              timestamp: 47.2
+              description: 'We will move helper function `$` to separate class and we will inherit from it'
             - type: comment
-              timestamp: 582.8215838362579
-              description: Lets limit using `hooks` to a specified node.
+              timestamp: 80
+              description: We will limit `hook` selection to specific node.
             - type: comment
-              timestamp: 582.8215838362579
-              description: We are extending `View` class and we are calling its constructor by using `super`
+              timestamp: 105.8
+              description: We are extending `View` class and we call its constructor by using `super`
             - type: comment
-              timestamp: 582.8215838362579
+              timestamp: 134
               description: We are fixing function calls.
             - type: comment
-              timestamp: 582.8215838362579
-              description: Lets pass the `body` as a `$parent`
-            - type: comment
-              timestamp: 582.8215838362579
-              description: Lets create a cite generator.
-            - type: comment
-              timestamp: 582.8215838362579
-              description: 'By using `function*` and `yield` we can create generators (which are the dynamic iterators).'
-            - type: comment
-              timestamp: 582.8215838362579
-              description: '`browser-polyfill` has generator implementations for ES5. It is required by babel `babel`.'
-            - type: comment
-              timestamp: 582.8215838362579
-              description: We are creating new generator instance and we will use it to generate initial cite.
-            - type: comment
-              timestamp: 582.8215838362579
-              description: 'Generators are in fact Iterators in which case we need to use `next()` function'
-            - type: comment
-              timestamp: 582.8215838362579
-              description: Our generator has single `yield` which means that it can return only a single value.
-            - type: comment
-              timestamp: 582.8215838362579
-              description: Lets move generators to separate file.
-            - type: comment
-              timestamp: 582.8215838362579
-              description: Lets copy generator implementation to separate file.
-            - type: comment
-              timestamp: 582.8215838362579
-              description: "Now we will create an infinite generator of random cites."
-            - type: comment
-              timestamp: 582.8215838362579
-              description: We have got an array of values and a function to pick a random value.
-            - type: comment
-              timestamp: 582.8215838362579
-              description: 'We return single random value, and we enclose everything within infinite loop'
+              timestamp: 150
+              description: Let pass `body` as `$parent`
       - title: Generators
         material: 557a0d5645bda83c1324e324
         annotationsMergeWithAuto: true
         annotations:
-          annotations: []
+          annotations:
+            - type: comment
+              timestamp: 1.5
+              description: Lets create citation generator.
+            - type: comment
+              timestamp: 13.5
+              description: 'By using `function*` and `yield` we can create generators (which arre in fact dynamic iterators)'
+            - type: comment
+              timestamp: 76.8
+              description: '`browser-polyfill` has generators implementation for ES5, and it is required by`babel`.'
+            - type: comment
+              timestamp: 111.5
+              description: We are creating new generator instance and we will use it to generate first citation.
+            - type: comment
+              timestamp: 122.5
+              description: 'Generators are in fact iterators, therfore we need to use the `next()` function'
+            - type: comment
+              timestamp: 144.4
+              description: Our generators has only single `yield` therefore it returns only single value.
+            - type: comment
+              timestamp: 179
+              description: Lets move the generator to a new file.
+            - type: comment
+              timestamp: 191.8
+              description: We will copy the generator's body here.
+            - type: comment
+              timestamp: 202.9
+              description: "We will create random citation generator whic will generate citations infinitely."
+            - type: comment
+              timestamp: 331.5
+              description: We have array of citations and a function to randomly pick single cite.
+            - type: comment
+              timestamp: 401.6
+              description: 'We return single random value. We encapsulate the code witin infinite loop.'
   - title: Iteration 5
     tasks:
       - title: Tinder 5.
-        url: 'https://devmeetings.github.io/devmeeting-es6/tasks/pl_05.html'
+        url: 'https://devmeetings.github.io/devmeeting-es6/tasks/en_05.html'
         noOfTasks: 4
       - title: Maps 5.
-        url: 'https://devmeetings.github.io/devmeeting-es6/tasks-maps/en-05.html'
+        url: 'https://devmeetings.github.io/devmeeting-es6/tasks-maps/en_05.html'
         noOfTasks: 1
     materials:
       - title: Local Storage
@@ -353,58 +353,58 @@ iterations:
         annotations:
           annotations:
             - type: comment
-              timestamp: 582.8215838362579
-              description: We add `fillText` function which will populate the `input`.
+              timestamp: 58.2
+              description: First we add `fillText` method which will fill the `input`e field.
             - type: comment
-              timestamp: 582.8215838362579
-              description: 'We are creating `Storage` class, which will store all values.'
+              timestamp: 148.9
+              description: 'We will create `Storage` class, which will be the abstract class for data stores'
             - type: comment
-              timestamp: 582.8215838362579
-              description: We load data from `localStorage` and handle potential errors.
+              timestamp: 225.4
+              description: We fetch data from `localStorage` and we handle potenatial errors.
             - type: comment
-              timestamp: 582.8215838362579
-              description: 'Getters and setters are available in ES5, but using them with ES6 classes is more optimal.'
+              timestamp: 245.9
+              description: 'Getters and Setters are already available in ES5, but using them with class is much more convinient.'
             - type: comment
-              timestamp: 582.8215838362579
-              description: We are changing `Storage` class to use getters and setters.
+              timestamp: 293.9
+              description: We change `Storage` class to use getters and setters.
             - type: comment
-              timestamp: 582.8215838362579
-              description: Lets check if the application is working correctly.
-            - type: comment
-              timestamp: 582.8215838362579
-              description: We will make `SessionStorage` and `LocalStorage` to be exchangable
-            - type: comment
-              timestamp: 582.8215838362579
-              description: We are creating a base class and more specifics classes to handle each type of storage
-            - type: comment
-              timestamp: 582.8215838362579
-              description: `export default` prevents exporting more than default object. We need to change it.
-            - type: comment
-              timestamp: 582.8215838362579
-              description: "We will change our storage API to works as it was asynchronous. We will use `Promise`"
-            - type: comment
-              timestamp: 582.8215838362579
-              description: '`setImmediate` simulate delay in javascript processing.'
-            - type: comment
-              timestamp: 582.8215838362579
-              description: We are changing the function call.
-            - type: comment
-              timestamp: 582.8215838362579
-              description: 'We will try to create an iterator which will return asynchronous data.'
-            - type: comment
-              timestamp: 582.8215838362579
-              description: Unfortunatelly `yield` can be used only directly in generator.
-            - type: comment
-              timestamp: 582.8215838362579
-              description: 'We could not make the workaround. Iterators must be synchronous. Generators can be used to read (but not create) asynchronous data'
+              timestamp: 334.6
+              description: Lets check how the new app works.
       - title: 'Local Storage & Session Storage'
         material: 557b21ec0b5ce4e84def3c91
         annotationsMergeWithAuto: true
         annotations:
-          annotations: []
+          annotations:
+            - type: comment
+              timestamp: 13.2
+              description: Lets change the code to use `SessionStorage` and `LocalStorage`
+            - type: comment
+              timestamp: 45.4
+              description: We create a base class and two specific classes which inheit from the base class.
+            - type: comment
+              timestamp: 57
+              description: If we use `export default` we cannot export additional objects. Lets fix it.
       - title: Trying Promises
         material: 557b22b80b5ce4e84def3e38
         annotationsMergeWithAuto: true
         annotations:
-          annotations: []
+          annotations:
+            - type: comment
+              timestamp: 1.0
+              description: "Lets change our storage to be asynchronouys. Lets use `Promise`"
+            - type: comment
+              timestamp: 23
+              description: '`setImmediate` simulates delay in data access.'
+            - type: comment
+              timestamp: 40.2
+              description: We change the function call.
+            - type: comment
+              timestamp: 126.3
+              description: 'We are trying to create interator which works asynchronously.'
+            - type: comment
+              timestamp: 236.6
+              description: Unfortunately `yield` can be used only directly in gener.
+            - type: comment
+              timestamp: 269
+              description: 'Unfortunately we could not make it. Iterators have to be synchronous. Generators cna be used to handle asnchronous data
 liveLink: 'https://xplatform.org/live/es6'
