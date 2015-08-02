@@ -1,5 +1,5 @@
 title: ECMAScript 6 (8/8/2015)
-name: es6
+name: es6-en
 image: 'https://devmeetings.github.io/devmeeting-es6/gfx/es6.png'
 baseSlide: 55795e83d91ce0413065802c
 visible: true
@@ -407,4 +407,4 @@ iterations:
             - type: comment
               timestamp: 269
               description: 'Unfortunately we could not make it. Iterators have to be synchronous. Generators cna be used to handle asnchronous data
-liveLink: 'https://xplatform.org/live/es6'
+liveLink: 'https://xplatform.org/live/es6-en'
