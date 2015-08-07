@@ -49,7 +49,7 @@ iterations:
               description: Lets add `hook` attribute to `h1`
             - type: comment
               timestamp: 221.49361304039687
-              description: Using`let` we are declaring a variable which has a scope range
+              description: Using `let` we are declaring a variable which has a scope range
             - type: comment
               timestamp: 255.18856815240105
               description: 'We are using shorter form for creating anonymous function `()=>`'
@@ -108,7 +108,7 @@ iterations:
               description: We have moved all DOM rendering logic to `render` function
             - type: comment
               timestamp: 279.41048192771086
-              description: 'Now we need to create instances of our class'
+              description: 'Now we need to create instance of our class'
             - type: comment
               timestamp: 302.4207569099929
               description: We change `$` calls inside the `render` function to use predefined fields instead.
@@ -137,7 +137,7 @@ iterations:
               description: We will add author for every cite.
             - type: comment
               timestamp: 119.82255421686746
-              description: In collection we cannot store just strings anymore. Lets add a data model class (Citation).
+              description: In the collection we cannot store just strings anymore. Lets add a data model class (Citation).
             - type: pause
               title: Pause
               description: We need to fix the rendering.
@@ -205,7 +205,7 @@ iterations:
               description: We move our helper function `$`
             - type: comment
               timestamp: 178.2180564274856
-              description: We are fixing some errors - we used  `citations` variable instead of `this.collection`
+              description: We are fixing some errors - we used `citations` variable instead of `this.collection`
             - type: comment
               timestamp: 191.77349813921143
               description: 'Our view uses model directly. We need to move model to seprate module so we will be able to import it.'
@@ -214,7 +214,7 @@ iterations:
               description: From the module `models` we are exporting our model class.
             - type: comment
               timestamp: 241.7349833052866
-              description: 'Class `Citation` is the only export in our module, therefore we used `export default`'
+              description: 'Class `Citation` is the only export in our module, therefore we use `export default`'
             - type: comment
               timestamp: 250.25554666694282
               description: 'Notice that in this case we did not use `Destructuring Assignment`'
@@ -313,7 +313,7 @@ iterations:
               description: 'By using `function*` and `yield` we can create generators (which arre in fact dynamic iterators)'
             - type: comment
               timestamp: 76.8
-              description: '`browser-polyfill` has generators implementation for ES5, and it is required by`babel`.'
+              description: '`browser-polyfill` has generators implementation for ES5, and it is required by `babel`.'
             - type: comment
               timestamp: 111.5
               description: We are creating new generator instance and we will use it to generate first citation.
@@ -322,7 +322,7 @@ iterations:
               description: 'Generators are in fact iterators, therfore we need to use the `next()` function'
             - type: comment
               timestamp: 144.4
-              description: Our generators has only single `yield` therefore it returns only single value.
+              description: Our generator has only single `yield` therefore it returns only single value.
             - type: comment
               timestamp: 179
               description: Lets move the generator to a new file.
@@ -331,10 +331,10 @@ iterations:
               description: We will copy the generator's body here.
             - type: comment
               timestamp: 202.9
-              description: "We will create random citation generator whic will generate citations infinitely."
+              description: "We will create random citation generator which will generate citations infinitely."
             - type: comment
               timestamp: 331.5
-              description: We have array of citations and a function to randomly pick single cite.
+              description: We have an array of citations and a function to randomly pick single cite.
             - type: comment
               timestamp: 401.6
               description: 'We return single random value. We encapsulate the code witin infinite loop.'
