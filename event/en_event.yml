@@ -24,10 +24,10 @@ iterations:
               description: ES6 is not yet supported by the browsers.
               timestamp: 1.1300694542877392
             - type: comment
-              description: Xplatform uses 'babel'.
+              description: 'Xplatform uses `babel`.'
               timestamp: 2.8251736357193478
             - type: comment
-              description: 'babel' transpiles EcmaScript 6 to EcmaScript 5.
+              description: '`babel` transpiles EcmaScript 6 to EcmaScript 5.'
               timestamp: 5.085312544294826
             - type: comment
               description: You can read more about babel here https://babeljs.io/
@@ -383,7 +383,7 @@ iterations:
               description: We create a base class and two specific classes which inheit from the base class.
             - type: comment
               timestamp: 57
-              description: If we use `export default` we cannot export additional objects. Lets fix it.
+              description: 'If we use `export default` we cannot export additional objects. Lets fix it.'
       - title: Trying Promises
         material: 557b22b80b5ce4e84def3e38
         annotationsMergeWithAuto: true
@@ -406,5 +406,5 @@ iterations:
               description: Unfortunately `yield` can be used only directly in generator.
             - type: comment
               timestamp: 269
-              description: 'Unfortunately we could not make it. Iterators have to be synchronous. Generators can be used to handle asnchronous data
+              description: 'Unfortunately we could not make it. Iterators have to be synchronous. Generators cna be used to handle asnchronous data'
 liveLink: 'https://xplatform.org/live/es6-en'
