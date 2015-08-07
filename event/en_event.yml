@@ -184,10 +184,10 @@ iterations:
           annotations:
             - type: comment
               timestamp: 4.002253720765415
-              description: Our file is getting bigger we should split it to modules.
+              description: Our file is getting bigger we should split it into modules.
             - type: comment
               timestamp: 19.494187105595067
-              description: View related are moved to a different file.
+              description: We move view related classes to a different file.
             - type: comment
               timestamp: 58.61131890229018
               description: 'By using `export` we mark elements which are public in our module.'
@@ -403,8 +403,8 @@ iterations:
               description: 'We are trying to create interator which works asynchronously.'
             - type: comment
               timestamp: 236.6
-              description: Unfortunately `yield` can be used only directly in gener.
+              description: Unfortunately `yield` can be used only directly in generator.
             - type: comment
               timestamp: 269
-              description: 'Unfortunately we could not make it. Iterators have to be synchronous. Generators cna be used to handle asnchronous data
+              description: 'Unfortunately we could not make it. Iterators have to be synchronous. Generators can be used to handle asnchronous data
 liveLink: 'https://xplatform.org/live/es6'
